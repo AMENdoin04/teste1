@@ -6,10 +6,3 @@ class Pessoas(models.Model):
 
     def __str__(self) -> str:
         return self.nome
-
-class Imagem_carosel(models.Model):
-    lugar = models.TextField(max_length=255)
-    img = models.FileField(null=True, blank=True)
-
-    def __str__(self) -> str:
-        return self.lugar
